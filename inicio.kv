@@ -1,0 +1,34 @@
+BoxLayoutExample:
+
+<BoxLayoutExample>:
+    orientation:"vertical"
+    BoxLayout1:
+        
+    
+
+<BoxLayout1>:
+    orientation:"vertical"
+    Label:
+        id:usuario_0
+        text:"Usuario"
+    TextInput:
+        id:usuario_input
+        pos_hint:{"x":0.1, "y":0.25}
+        size_hint:0.8, 0.5
+        text:
+    Label:
+        id:contraseña_0
+        text:"Contraseña"
+    BoxLayout:
+
+        TextInput:
+            id:contraseña_input
+            pos_hint:{"x":0.1, "y":0.25}
+            size_hint:0.8, 0.5
+            password:True
+    Button:
+        text:"Ingresar"
+        on_press:root.on_button_click(usuario_input,contraseña_input)
+
+#<BoxLayout2>:
+#    orientation:"vertical"
